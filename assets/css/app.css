@@ -1,0 +1,518 @@
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+header {
+    padding-top: 50px;
+}
+
+/*SECTIONS*/
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+section#search {
+    padding-top: 100px !important
+}
+
+.home section#search {
+    padding-top: 30px !important
+}
+
+section .page-header {
+    margin: 0;
+}
+
+/*BUTTONS*/
+.btn {
+    text-transform: uppercase;
+}
+
+/*FOOTER*/
+footer {
+    display: inline-block;
+    width: 100%;
+    min-width: 100%;
+    min-height: 300px;
+}
+
+#current_theme {
+    text-transform: capitalize
+}
+
+/*PAGINATION*/
+.pagination {
+    margin: 30px 0
+}
+
+/*TABS*/
+#myTabs .nav-tabs {
+    margin-bottom: 20px
+}
+
+#categories.tab-pane div {
+    padding-top: 0;
+}
+
+#locations.tab-pane div {
+    padding-top: 0;
+}
+
+#browse .tab-content {
+    margin-top: 30px
+}
+
+
+/*JOB LISTINGS*/
+.jobtitle {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 120%;
+    display: inline-block;
+}
+
+.no-jobs {
+    padding-top: 10px;
+}
+
+
+.share-group li {
+    float: left;
+    width: 25%;
+}
+
+.share-group li a {
+    display: block;
+}
+
+
+/* iOS spin */
+
+.ui-ios-overlay {
+    z-index: 99999;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 200px;
+    height: 200px;
+    margin-left: -100px;
+    margin-top: -100px;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#cc000000, endColorstr=#cc000000);
+    background: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+}
+
+.ui-ios-overlay .title {
+    color: #FFF;
+    font-weight: bold;
+    text-align: center;
+    display: block;
+    font-size: 26px;
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    width: 100%;
+}
+
+.ui-ios-overlay img {
+    display: block;
+    margin: 20% auto 0 auto;
+}
+
+.ui-ios-overlay .spinner {
+    left: 50% !important;
+    top: 40% !important;
+}
+
+.ios-overlay-show {
+    -webkit-animation-name: ios-overlay-show;
+    -webkit-animation-duration: 750ms;
+    -moz-animation-name: ios-overlay-show;
+    -moz-animation-duration: 750ms;
+    -ms-animation-name: ios-overlay-show;
+    -ms-animation-duration: 750ms;
+    -o-animation-name: ios-overlay-show;
+    -o-animation-duration: 750ms;
+    animation-name: ios-overlay-show;
+    animation-duration: 750ms;
+}
+
+@-webkit-keyframes ios-overlay-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes ios-overlay-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-ms-keyframes ios-overlay-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes ios-overlay-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes ios-overlay-show {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.ios-overlay-hide {
+    -webkit-animation-name: ios-overlay-hide;
+    -webkit-animation-duration: 750ms;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-name: ios-overlay-hide;
+    -moz-animation-duration: 750ms;
+    -moz-animation-fill-mode: forwards;
+    -ms-animation-name: ios-overlay-hide;
+    -ms-animation-duration: 750ms;
+    -ms-animation-fill-mode: forwards;
+    -o-animation-name: ios-overlay-hide;
+    -o-animation-duration: 750ms;
+    -o-animation-fill-mode: forwards;
+    animation-name: ios-overlay-hide;
+    animation-duration: 750ms;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes ios-overlay-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-moz-keyframes ios-overlay-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-ms-keyframes ios-overlay-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@-o-keyframes ios-overlay-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ios-overlay-hide {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
+
+/*CAROUSEL*/
+.carousel .carousel-item {
+    max-height: 450px;
+}
+
+.carousel-caption {
+    top: 150px;
+}
+
+.active .carousel-caption h1 {
+    color: #fff
+}
+
+.clearfix {
+    clear: both
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+    h1 {
+        font-size: 28px !important;
+        line-height: 34px !important;
+    }
+
+    .carousel-caption {
+        top: 20px;
+    }
+}
+
+
+
+/*IMAGES*/
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    display: block;
+    max-width: 100%;
+    width: 100%;
+    min-height: 135px;
+
+}
+
+
+
+/* Portrait and Landscape */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+
+    h2 {
+        font-size: 23px;
+        font-weight: 300
+    }
+
+    h3 {
+        font-size: 18px;
+        font-weight: 300
+    }
+
+    .list-group-item {
+        padding: 10px;
+    }
+
+    .list-group-item a {
+        font-size: 12px;
+    }
+
+    .carousel-caption {
+        top: 0;
+    }
+
+    #myCarousel ol {
+        margin-bottom: 0
+    }
+
+    .carousel-indicators {
+        bottom: 0
+    }
+
+    #myCarousel h1 {
+        margin-bottom: 0
+    }
+
+    p.source {
+        font-size: 10px;
+    }
+
+    p.sourcecompany {
+        font-size: 12px;
+    }
+
+section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 100%;
+}
+
+
+
+}
+
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
+
+    .carousel-caption p {
+        font-size: 30px;
+        line-height: 26px;
+    }
+
+    .list-group-item a {
+        font-size: 16px;
+    }
+
+}
+
+/*BACK TO TOP*/
+.cd-top {
+    display: inline-block;
+        padding: 10px 15px;
+    position: fixed;
+    bottom: 60px;
+    right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+    /* image replacement properties */
+    overflow: hidden;
+    white-space: nowrap;
+    visibility: hidden;
+    opacity: 0;
+    color: #fff;
+    -webkit-transition: opacity .3s 0s, visibility 0s .3s;
+    -moz-transition: opacity .3s 0s, visibility 0s .3s;
+    transition: opacity .3s 0s, visibility 0s .3s;
+}
+
+.cd-top.cd-is-visible,
+.cd-top.cd-fade-out,
+.no-touch .cd-top:hover {
+    -webkit-transition: opacity .3s 0s, visibility 0s 0s;
+    -moz-transition: opacity .3s 0s, visibility 0s 0s;
+    transition: opacity .3s 0s, visibility 0s 0s;
+}
+
+.cd-top.cd-is-visible {
+    /* the button becomes visible */
+    visibility: visible;
+    opacity: 1;
+}
+
+.cd-top.cd-fade-out {
+    /* if the user keeps scrolling down, the button is out of focus and becomes less visible */
+    opacity: .5;
+}
+
+.no-touch .cd-top:hover {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 768px) {
+    .cd-top {
+        right: 20px;
+        bottom: 60px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .cd-top {
+        padding: 10px 15px;
+        right: 30px;
+        bottom: 60px;
+    }
+}
+
+.cd-top span {
+    display: inline-block;
+    text-align: center;
+}
+
+.tab-pane h3 a {
+    font-weight: bold
+}
+
+/*DOWNLOAD*/
+
+
+
+/*DROPDOWN MENU
+
+.dropdown-menu.show[aria-labelledby="lang"] {
+    display: flex;
+    width: 620px;
+    flex-wrap: wrap
+}
+
+.dropdown-menu.show[aria-labelledby="lang"] .dropdown-item {
+    width: 25%
+}
+
+.dropdown-menu.show[aria-labelledby="lang"] .dropdown-item:first-child {
+    width: 100%
+}
+*/
+.card-body {
+    overflow: hidden
+}
+
+.dropdown-menu {
+    max-height: 350px;
+    overflow-y: auto;
+}
+
+/*ZIPALERTS*/
+.zr_alerts_header_container,
+.inner_container p {
+    display: none
+}
+
+.zr_alerts_widget_container {
+    border: none !important
+}
+
+
+.gdWidget {
+    width: 298px !important;
+    height: 248px !important;
+    overflow: hidden !important;
+}
+
+.gdWidget div {
+    margin-left: -1px;
+    margin-top: -1px;
+    width: 298px !important;
+    height: 248px !important;
+    position: relative !important;
+}
+
+
+/*ADS*/
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    padding: 70px 0;
+}
+
+/*SIDEBAR */ 
+.sidebar-element {
+    margin-top: 60px;
+}
+/* PAGES */
+body.pages {
+    padding-top: 100px;
+}

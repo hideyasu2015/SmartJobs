@@ -1,0 +1,15 @@
+<IfModule mod_rewrite.c>
+	RewriteEngine On
+	
+	# replace /sub/ by your sub directory
+	RewriteBase /sub/
+	
+	RewriteCond %{HTTP_HOST} ^[^.]+\.[^.]+$
+	RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [L,R=301]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-d
+	
+	# replace /sub/ by your sub directory
+	RewriteRule . /sub/index.php [QSA,L]
+	RewriteRule ^api/{REQUEST_FILENAME}$ api/
+</IfModule>
