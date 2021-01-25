@@ -267,26 +267,13 @@ if ($default_country == 'on') {
             <div class="row">
               <div class="col-lg-12">
                 <iframe id="elem" height="430" width="420"
-                  src="https://bot.dialogflow.com/69f151eb-87b1-4597-9144-2de251db6976"></iframe>
-                <div id="dialog">
-                  here
-                </div>
+                  src="https://console.dialogflow.com/api-client/demo/embedded/69f151eb-87b1-4597-9144-2de251db6976"></iframe>
+
               </div>
             </div>
           </div>
         </div>
-        <script>
-        // jQuery(div).appendTo('#tab<?php echo $c; ?>');
-        const target_innner = elem.contentWindow.document.querySelector('frame');
-        const dialog_document = elem.contentWindow.document;
-        window.onload = function() {
-          const elem = document.getElementById('elem');
-          const dialog = document.getElementById('dialog');
-          dialog_document2 = elem.contentWindow.document.querySelector('#resultWrapper');
-          console.log($(dialog_document2));
-          dialog.innerHTML = dialog_document2;
-        }
-        </script>
+
         <!-- / SIDEBAR -->
 
         <script type="text/javascript">
