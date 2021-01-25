@@ -16,9 +16,7 @@ if ($default_country == 'on') {
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description"
     content="<?php echo $sitedescription; ?> - <?php echo $document_title; ?> - <?php echo _text(get_locale()); ?>" />
-  <title><?php echo $document_title; ?><?php if (isset($_REQUEST['page'])) : ?> - Page
-    <?php echo $_REQUEST['page']; ?><?php endif; ?> - <?php echo $sitename; ?> - <?php echo _text(get_locale()); ?>
-  </title>
+  <title>Smart Jobs</title>
   <?php if (isset($theme)) : ?>
   <link id="theme_switcher" href="<?php echo $siteurl; ?>/assets/themes/<?php echo $theme; ?>/bootstrap.min.css"
     rel="stylesheet">
@@ -263,28 +261,30 @@ if ($default_country == 'on') {
           </div>
         </div>
 
-        <!-- SIDEBAR -->
+        <!-- SIDEBAR Dialogflowです kawanoさん -->
         <div class="col-md-4 float-right" id="sidebar">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <iframe id="elem" height="430" width="350"
+                <iframe id="elem" height="430" width="420"
                   src="https://bot.dialogflow.com/69f151eb-87b1-4597-9144-2de251db6976"></iframe>
                 <div id="dialog">
-                  aaaa
+                  here
                 </div>
               </div>
             </div>
           </div>
         </div>
         <script>
-        const dialog = document.getElementById('dialog');
-        const elem = document.getElementById('elem');
+        // jQuery(div).appendTo('#tab<?php echo $c; ?>');
         const target_innner = elem.contentWindow.document.querySelector('frame');
         const dialog_document = elem.contentWindow.document;
         window.onload = function() {
-          console.log(dialog_document);
-          dialog.innerHTML = dialog_document;
+          const elem = document.getElementById('elem');
+          const dialog = document.getElementById('dialog');
+          dialog_document2 = elem.contentWindow.document.querySelector('#resultWrapper');
+          console.log($(dialog_document2));
+          dialog.innerHTML = dialog_document2;
         }
         </script>
         <!-- / SIDEBAR -->
@@ -509,9 +509,9 @@ if ($default_country == 'on') {
   </section>
   <!-- / SEARCHRESULTS -->
 
-  <?php if (isset($jobalert) && $jobalert == 'on') : ?>
+  <?#php if (isset($jobalert) && $jobalert == 'on') : ?>
   <!-- JOB ALERT -->
-  <section id="jobalert">
+  <!-- <section id="jobalert">
     <div class="col-md-12 text-center">
 
       <div class="card border-secondary">
@@ -520,20 +520,20 @@ if ($default_country == 'on') {
         <div class="card-body">
           <p class="card-text">Get the latest jobs to your inbox daily!</p>
           <p class="card-text">
-            <script src="https://www.zipalerts.com/subscribe-widget/<?php echo $zipalert; ?>.js"></script>
+            <script src="https://www.zipalerts.com/subscribe-widget/<?#php echo $zipalert; ?>.js"></script>
           </p>
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- JOB ALERT -->
-  <?php endif; ?>
+  <?#php endif; ?>
 
 
   <!-- ADS -->
-  <div class="col-lg-12 text-center">
-    <?php echo $adsenseads; ?>
-  </div>
+  <!-- <div class="col-lg-12 text-center">
+    <?#php echo $adsenseads; ?>
+  </div> -->
   <!-- / ADS-->
 
 
@@ -584,11 +584,10 @@ if ($default_country == 'on') {
   <section id="download">
 
     <div class="jumbotron">
-      <h5 class="display-4">Create a Job Portal for any Niche</h5>
+      <h5 class="display-4">Smart Jobs</h5>
       <p class="lead">Jobs Aggregator software can be used for creating different kind of job portals.</p>
       <hr class="my-4">
-      <a class="btn btn-primary btn-lg" href="https://www.mediageni.com/software/instant-jobs-search-engine"
-        target="_blank" role="button">Learn more</a>
+      <a class="btn btn-primary btn-lg" href="#" target="_blank" role="button">Learn more</a>
     </div>
 
   </section>
