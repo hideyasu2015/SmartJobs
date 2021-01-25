@@ -150,7 +150,7 @@ class Careerjet_API {
   *
   */
 
-  public function __construct( $locale = 'en_GB' )
+  public function __construct( $locale = 'ja_JP' )
   {
     $this->locale = $locale;
   }
@@ -346,5 +346,3 @@ class Careerjet_API {
     return $result;
   }
 }
-
-?>
