@@ -16,7 +16,7 @@
           <ul class="navbar-nav">
             <li class="nav-item active"><a class="nav-link" href="<?php echo get_site_url(array(), 'top'); ?>"><i
                   class="fa fa-home"></i> <?php echo _text('MENU_HOME'); ?></a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo $root; ?>/test.php"><i class="fas fa-search"></i>
+            <li class="nav-item"><a class="nav-link" href="<?php echo $root; ?>test.php"><i class="fas fa-search"></i>
                 Test </a></li>
             <li class="nav-item"><a class="nav-link" href="#<?php echo _text('JOB_RESULTS'); ?>"><i
                   class="fa fa-briefcase"></i> <?php echo _text('MENU_LATEST'); ?></a></li>
