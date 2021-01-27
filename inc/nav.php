@@ -9,16 +9,12 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <!-- Collect the nav links, forms, and other content for toggling -->
-        <?php
-        //get root url
-        $root = (!empty($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'] . '/';
-        ?>
+
         <div class="collapse navbar-collapse navbar-ex1-collapse">
           <ul class="navbar-nav">
             <li class="nav-item active"><a class="nav-link" href="<?php echo get_site_url(array(), 'top'); ?>"><i
                   class="fa fa-home"></i> <?php echo _text('MENU_HOME'); ?></a></li>
-            <li class="nav-item"><a class="nav-link" href="<?php echo $root; ?>test.php"><i class="fas fa-search"></i>
-                Test </a></li>
+
             <li class="nav-item"><a class="nav-link" href="#<?php echo _text('JOB_RESULTS'); ?>"><i
                   class="fa fa-briefcase"></i>
                 最近のお仕事一覧</a></li>

@@ -32,10 +32,10 @@ if ($default_country == 'on') {
   <script type="text/javascript" src="https://gdc.indeed.com/ads/apiresults.js"></script>
   <!-- Favorite and ios icons -->
   <link rel="shortcut icon" href="<?php echo $siteurl; ?>/assets/img/ico/favicon.ico">
-  <link rel="apple-touch-icon" href="<?php echo $siteurl; ?>/assets/img/ico/icon.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $siteurl; ?>/assets/img/ico/icon-72.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $siteurl; ?>/assets/img/ico/icon2x.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $siteurl; ?>/assets/img/ico/icon-722x.png" />
+  <link rel="apple-touch-icon" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
   <script>
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
