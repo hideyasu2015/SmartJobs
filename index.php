@@ -258,17 +258,30 @@ if ($default_country == 'on') {
         </div>
 
         <!-- SIDEBAR Dialogflowです kawanoさん -->
+        <style>
+        df-messenger {
+          --df-messenger-bot-message: #878fac;
+          --df-messenger-button-titlebar-color: #42a5f5;
+          --df-messenger-chat-background-color: #fafafa;
+          --df-messenger-font-color: white;
+          --df-messenger-send-icon: #878fac;
+          --df-messenger-user-message: #479b3d;
+          --df-messenger-chat-icon: "https://takawano120.xsrv.jp/assets/img/ico/icon-36.png"
+        }
+        </style>
         <div class="col-md-4 float-right" id="sidebar">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <iframe id="elem" height="430" width="420"
-                  src="https://console.dialogflow.com/api-client/demo/embedded/69f151eb-87b1-4597-9144-2de251db6976"></iframe>
+                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+                <df-messenger intent="WELCOME" chat-title="SmartJobs" agent-id="69f151eb-87b1-4597-9144-2de251db6976"
+                  expand="true" language-code="ja"></df-messenger>
 
               </div>
             </div>
           </div>
         </div>
+
 
         <!-- / SIDEBAR -->
 

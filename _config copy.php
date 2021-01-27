@@ -33,21 +33,21 @@ window.cookieconsent.initialise({
 $theme = 'cerulean';
 $themeswitcher = 'on';
 $smooth_scroll = 'off';
-$jobalert = 'off';
-$downloadlink = 'off';
+$jobalert = 'on';
+$downloadlink = 'on';
 
 
 // ADVERTISING & AFFILIATE
 $adsenseads = 'ADD YOUR ADS CODE HERE';
 
-// $indeed_publisher_id = '17083005191573';
-// $indeed_channel = 'jobsaggregatordemo';
+$indeed_publisher_id = '17083005191573';
+$indeed_channel = 'jobsaggregatordemo';
 
 //for kawano
 $careerjet_publisher_id = '15978820449c446fcb377e2913abe1dc';
 
 //ZIPRECRUITER 
-// $zipalert = "t5qrj2vqf3i6isvaghp8fzwbppu7r4px";
+$zipalert = "t5qrj2vqf3i6isvaghp8fzwbppu7r4px";
 
 
 
@@ -55,7 +55,7 @@ $careerjet_publisher_id = '15978820449c446fcb377e2913abe1dc';
 $salarycheck = 'on'; // on or off
 
 //REDIRECT TO DEFAULT COUNTRY
-$default_country = 'on'; // on or off
+$default_country = 'off'; // on or off
 
 // GOOGLE ANALYTICS CODE ID
 $statistics_code = "";
@@ -64,8 +64,8 @@ $statistics_code = "";
 $addthis = ""; // Create a profile ID at addthis.com
 
 // DEFAULT LANGUAGE - COUNTRY
-$locale = 'ja-JP';
-$language_switcher = 'off'; // on or off
+$locale = 'en-US';
+$language_switcher = 'on'; // on or off
 
 // DEFAULT SEARCH SETTINGS
 $limit_listings = "20"; // Limit search listings per source

@@ -28,11 +28,13 @@ section .page-header {
 }
 
 /*BUTTONS*/
+
 .btn {
     text-transform: uppercase;
 }
 
 /*FOOTER*/
+
 footer {
     display: inline-block;
     width: 100%;
@@ -45,11 +47,13 @@ footer {
 }
 
 /*PAGINATION*/
+
 .pagination {
     margin: 30px 0
 }
 
 /*TABS*/
+
 #myTabs .nav-tabs {
     margin-bottom: 20px
 }
@@ -66,8 +70,8 @@ footer {
     margin-top: 30px
 }
 
-
 /*JOB LISTINGS*/
+
 .jobtitle {
     font-weight: 700;
     margin-bottom: 10px;
@@ -79,7 +83,6 @@ footer {
     padding-top: 10px;
 }
 
-
 .share-group li {
     float: left;
     width: 25%;
@@ -88,7 +91,6 @@ footer {
 .share-group li a {
     display: block;
 }
-
 
 /* iOS spin */
 
@@ -147,7 +149,6 @@ footer {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -157,7 +158,6 @@ footer {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -167,7 +167,6 @@ footer {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -177,7 +176,6 @@ footer {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -187,7 +185,6 @@ footer {
     0% {
         opacity: 0;
     }
-
     100% {
         opacity: 1;
     }
@@ -215,7 +212,6 @@ footer {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -225,7 +221,6 @@ footer {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -235,7 +230,6 @@ footer {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -245,7 +239,6 @@ footer {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
@@ -255,13 +248,13 @@ footer {
     0% {
         opacity: 1;
     }
-
     100% {
         opacity: 0;
     }
 }
 
 /*CAROUSEL*/
+
 .carousel .carousel-item {
     max-height: 450px;
 }
@@ -278,111 +271,82 @@ footer {
     clear: both
 }
 
-
-
-
 @media only screen and (max-width: 960px) {
     h1 {
         font-size: 28px !important;
         line-height: 34px !important;
     }
-
     .carousel-caption {
         top: 20px;
     }
 }
 
-
-
 /*IMAGES*/
-.img-responsive,
-.thumbnail > img,
-.thumbnail a > img,
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+
+.img-responsive, .thumbnail>img, .thumbnail a>img, .carousel-inner>.item>img, .carousel-inner>.item>a>img {
     display: block;
     max-width: 100%;
     width: 100%;
     min-height: 135px;
-
 }
 
-
-
 /* Portrait and Landscape */
+
 @media only screen and (min-width: 320px) and (max-width: 480px) {
-
-
     h2 {
         font-size: 23px;
         font-weight: 300
     }
-
     h3 {
         font-size: 18px;
         font-weight: 300
     }
-
     .list-group-item {
         padding: 10px;
     }
-
     .list-group-item a {
         font-size: 12px;
     }
-
     .carousel-caption {
         top: 0;
     }
-
     #myCarousel ol {
         margin-bottom: 0
     }
-
     .carousel-indicators {
         bottom: 0
     }
-
     #myCarousel h1 {
         margin-bottom: 0
     }
-
     p.source {
         font-size: 10px;
     }
-
     p.sourcecompany {
         font-size: 12px;
     }
-
-section {
-    padding-top: 50px;
-    padding-bottom: 50px;
-    width: 100%;
+    section {
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 100%;
+    }
 }
-
-
-
-}
-
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1) {
-
     .carousel-caption p {
         font-size: 30px;
         line-height: 26px;
     }
-
     .list-group-item a {
         font-size: 16px;
     }
-
 }
 
 /*BACK TO TOP*/
+
 .cd-top {
     display: inline-block;
-        padding: 10px 15px;
+    padding: 10px 15px;
     position: fixed;
     bottom: 60px;
     right: 10px;
@@ -398,9 +362,7 @@ section {
     transition: opacity .3s 0s, visibility 0s .3s;
 }
 
-.cd-top.cd-is-visible,
-.cd-top.cd-fade-out,
-.no-touch .cd-top:hover {
+.cd-top.cd-is-visible, .cd-top.cd-fade-out, .no-touch .cd-top:hover {
     -webkit-transition: opacity .3s 0s, visibility 0s 0s;
     -moz-transition: opacity .3s 0s, visibility 0s 0s;
     transition: opacity .3s 0s, visibility 0s 0s;
@@ -447,8 +409,6 @@ section {
 
 /*DOWNLOAD*/
 
-
-
 /*DROPDOWN MENU
 
 .dropdown-menu.show[aria-labelledby="lang"] {
@@ -465,6 +425,7 @@ section {
     width: 100%
 }
 */
+
 .card-body {
     overflow: hidden
 }
@@ -475,15 +436,14 @@ section {
 }
 
 /*ZIPALERTS*/
-.zr_alerts_header_container,
-.inner_container p {
+
+.zr_alerts_header_container, .inner_container p {
     display: none
 }
 
 .zr_alerts_widget_container {
     border: none !important
 }
-
 
 .gdWidget {
     width: 298px !important;
@@ -499,8 +459,8 @@ section {
     position: relative !important;
 }
 
-
 /*ADS*/
+
 .sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -508,11 +468,21 @@ section {
     padding: 70px 0;
 }
 
-/*SIDEBAR */ 
+/*SIDEBAR */
+
 .sidebar-element {
     margin-top: 60px;
 }
+
 /* PAGES */
+
 body.pages {
     padding-top: 100px;
+}
+
+.kawano_icon {
+    width: 36px;
+    height: 36px;
+    background-image: url('/assets/img/ico/icon-36.png');
+    z-index: 1000;
 }
