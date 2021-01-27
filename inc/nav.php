@@ -68,16 +68,16 @@
             <?//php if (((isset($language_switcher) && $language_switcher == 'on') || !isset($language_switcher)) && $languages = get_languages()) : ?>
             <li class="nav-item dropdown">
               <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"
-                title="<?php echo _text('MENU_LANGUAGE'); ?> "> <i class="fas fa-globe"></i> <span
+                title="<#?php echo _text('MENU_LANGUAGE'); ?> "> <i class="fas fa-globe"></i> <span
                   class="caret"></span></a>
               <div class="dropdown-menu language-dropdown scrollable-menu" aria-labelledby="lang">
                 <?#php
-                  foreach ($languages as $lang) :
-                    @list($tmp, $_country) = explode('-', $lang);
-                    $return = base64_encode(get_current_url());
-                    $lang_url = trailingslashit($siteurl) . $_country . '/';
-                  ?>
-                <a class="dropdown-item" href="<?php echo $lang_url; ?>"><?php echo _text($lang); ?></a>
+                  // foreach ($languages as $lang) :
+                  //   @list($tmp, $_country) = explode('-', $lang);
+                  //   $return = base64_encode(get_current_url());
+                  //   $lang_url = trailingslashit($siteurl) . $_country . '/';
+                  // ?>
+                <a class="dropdown-item" href="<?#php echo $lang_url; ?>"><?#php echo _text($lang); ?></a>
                 <?//php endforeach; ?>
 
 
