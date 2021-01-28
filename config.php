@@ -54,8 +54,8 @@ $careerjet_publisher_id = '15978820449c446fcb377e2913abe1dc';
 //GLASSDOOR SALARY CHECK WIDGET
 $salarycheck = 'on'; // on or off
 
-//REDIRECT TO DEFAULT COUNTRY
-$default_country = 'on'; // on or off
+//REDIRECT TO DEFAULT COUNTRY　絶対にoffにしておくことドメインが変わってしまう!
+$default_country = 'off'; // on or off
 
 // GOOGLE ANALYTICS CODE ID
 $statistics_code = "";
