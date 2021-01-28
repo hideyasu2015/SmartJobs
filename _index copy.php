@@ -96,7 +96,8 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide1_title; ?></h1>
               <p><?php echo $slide1_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="2">詳細はこちら</a></p>
+              <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
+                  data-slide-to="2"><?php echo _text('BTN_JOB_AGGREGATOR'); ?></a></p>
             </div>
           </div>
         </div>
@@ -107,7 +108,8 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide2_title; ?></h1>
               <p><?php echo $slide2_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="3">詳細はこちら</a></p>
+              <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
+                  data-slide-to="3"><?php echo _text('BTN_JOB_AGGREGATOR'); ?></a></p>
             </div>
           </div>
         </div>
@@ -119,7 +121,7 @@ if ($default_country == 'on') {
               <h1><?php echo $slide3_title; ?></h1>
               <p><?php echo $slide3_description; ?></p>
               <p><a class="btn btn-large btn-primary newsearch"
-                  href="<?php echo get_site_url(array(), 'search'); ?>">自分の仕事をみつけよう!</a>
+                  href="<?php echo get_site_url(array(), 'search'); ?>"><?php echo _text('BTN_FIND_YOUR_JOB'); ?></a>
               </p>
             </div>
           </div>
@@ -279,7 +281,9 @@ if ($default_country == 'on') {
             </div>
           </div>
         </div>
-        <!-- / SIDEBAR ここまで-->
+
+
+        <!-- / SIDEBAR -->
 
         <script type="text/javascript">
         var opts = {
@@ -530,50 +534,50 @@ if ($default_country == 'on') {
 
 
   <!-- BROWSE -->
-  <!-- <section id="browse">
+  <section id="browse">
     <div class="row">
       <div class="col-lg-12 text-center">
 
-        <h2><i class="fas fa-book-open"></i>お仕事一覧　まずはチャットでご相談</h2>
-        <p class="text-center lead"><?#php echo _text('TEXT_SEARCH_ON'); ?></p>
+        <h2><i class="fas fa-book-open"></i> <?php echo _text('BTN_BROWSE_JOBS'); ?></h2>
+        <p class="text-center lead"><?php echo _text('TEXT_SEARCH_ON'); ?></p>
 
 
         <div class="col-lg-12">
           <ul class="nav nav-pills nav-fill navtop" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" href="#categories"
-                data-toggle="tab"><?#php echo _text('HEADING_CATEGORIES'); ?></a>
+                data-toggle="tab"><?php echo _text('HEADING_CATEGORIES'); ?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#locations" data-toggle="tab"><?#php echo _text('HEADING_LOCATIONS'); ?></a>
+              <a class="nav-link" href="#locations" data-toggle="tab"><?php echo _text('HEADING_LOCATIONS'); ?></a>
             </li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" role="tabpanel" id="categories">
 
               <!-- CATEGORIES -->
-  <!-- <div class="row multi-columns-row"><?#php print_categories($categories); ?></div> -->
-  <!-- / CATEGORIES -->
-  <!-- 
+              <div class="row multi-columns-row"><?php print_categories($categories); ?></div>
+              <!-- / CATEGORIES -->
+
             </div>
             <div class="tab-pane" role="tabpanel" id="locations">
 
               <!-- LOCATIONS -->
-  <!-- <div class="row multi-columns-row"><?#php print_locations($locations); ?></div> -->
-  <!-- / LOCATIONS -->
-  <!-- 
+              <div class="row multi-columns-row"><?php print_locations($locations); ?></div>
+              <!-- / LOCATIONS -->
+
             </div>
           </div>
         </div>
 
       </div>
     </div>
-  </section>  -->
+  </section>
   <!-- / BROWSE -->
 
 
-  <?#php if (isset($downloadlink) && $downloadlink == 'on') : ?>
-  <!-- <section id="download">
+  <?php if (isset($downloadlink) && $downloadlink == 'on') : ?>
+  <section id="download">
 
     <div class="jumbotron">
       <h5 class="display-4">Smart Jobs</h5>
@@ -582,11 +586,11 @@ if ($default_country == 'on') {
       <a class="btn btn-primary btn-lg" href="#" target="_blank" role="button">Learn more</a>
     </div>
 
-  </section> -->
-  <?#php endif; ?>
+  </section>
+  <?php endif; ?>
 
 
-  <?#php include("inc/footer.php"); ?>
+  <?php include("inc/footer.php"); ?>
 
 
 

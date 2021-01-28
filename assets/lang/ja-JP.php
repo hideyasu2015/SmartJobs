@@ -34,11 +34,11 @@ $locations = "中国地方,中部地方,九州地方,北海道,四国地方,東�
 
 $slide1_title = "SMART JOBS スマート・ジョブズ";
 
-$slide1_description = "おおきに！関西弁で対応しまっせ!なんの仕事でもたずねておくんなし!";
+$slide1_description = "いつまで徹夜つづけるんや？";
 
 $slide2_title = "SMART JOBS スマート・ジョブズ";
 
-$slide2_description = "右下のカエルのアイコンクリックしてみんか？";
+$slide2_description = "おおきに！関西弁で対応しまっせ!なんの仕事でもたずねておくんなし!";
 
 $slide3_title = "SMART JOBS スマート・ジョブズ";
 
@@ -104,11 +104,11 @@ $strings['BTN_FIND_YOUR_JOB'] = 'Find your job';
 
 
 
-$strings['HEADING_SEARCH_JOBS'] = 'Search Jobs';
+$strings['HEADING_SEARCH_JOBS'] = 'お仕事一覧';
 
 $strings['LEADING_FIND_JOBS_BY_KEYWORD_OR_LOCATION'] = 'Find jobs by keyword or location';
 
-$strings['TEXT_SEARCH_ON'] = 'Search on popular job posting sites at once with just once search or browse jobs by category or location below.';
+$strings['TEXT_SEARCH_ON'] = 'まずは、チャットでご相談してくれへんか？チャットの結果を表示しまんねん';
 
 $strings['TEXT_NO_RESULT'] = '<p class="no-jobs">No job listings match your search %s on %s</p>';
 
