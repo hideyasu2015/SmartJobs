@@ -84,8 +84,8 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $sitename; ?></h1>
               <p><?php echo $siteslogan; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
-                  data-slide-to="1"><?php echo _text('BTN_LEARN_MORE'); ?></a></p>
+              <!-- <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
+                  data-slide-to="1"><?#php echo _text('BTN_LEARN_MORE'); ?></a></p> -->
             </div>
           </div>
         </div>
@@ -96,7 +96,7 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide1_title; ?></h1>
               <p><?php echo $slide1_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="2">詳細はこちら</a></p>
+              <!-- <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="2">詳細はこちら</a></p> -->
             </div>
           </div>
         </div>
@@ -107,7 +107,7 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide2_title; ?></h1>
               <p><?php echo $slide2_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="3">詳細はこちら</a></p>
+              <!-- <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="3">詳細はこちら</a></p> -->
             </div>
           </div>
         </div>
@@ -118,9 +118,9 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide3_title; ?></h1>
               <p><?php echo $slide3_description; ?></p>
-              <p><a class="btn btn-large btn-primary newsearch"
-                  href="<?php echo get_site_url(array(), 'search'); ?>">自分の仕事をみつけよう!</a>
-              </p>
+              <!-- <p><a class="btn btn-large btn-primary newsearch"
+                  href="<?#php echo get_site_url(array(), 'search'); ?>">自分の仕事をみつけよう!</a>
+              </p> -->
             </div>
           </div>
         </div>
@@ -189,11 +189,7 @@ if ($default_country == 'on') {
 
 
 
-  <!-- ADS -->
-  <!-- <div class="col-lg-12 text-center">
-    <?#php echo $adsenseads; ?>
-  </div> -->
-  <!-- / ADS-->
+
 
 
   <!--  SEARCHRESULTS -->
@@ -254,7 +250,7 @@ if ($default_country == 'on') {
               $c = 0; ?>
           </div>
         </div>
-
+        <!-- =================ここがdialogflow========================================================= -->
         <!-- SIDEBAR Dialogflowです kawanoさん -->
         <style>
         df-messenger {
@@ -264,7 +260,7 @@ if ($default_country == 'on') {
           --df-messenger-font-color: white;
           --df-messenger-send-icon: #878fac;
           --df-messenger-user-message: #479b3d;
-          --df-messenger-chat-icon: "https://takawano120.xsrv.jp/assets/img/ico/icon-36.png"
+          --df-messenger-chat-icon: url("https://takawano120.xsrv.jp/assets/img/ico/icon-36.png")
         }
         </style>
         <div class="col-md-4 float-right" id="sidebar">
@@ -280,6 +276,7 @@ if ($default_country == 'on') {
           </div>
         </div>
         <!-- / SIDEBAR ここまで-->
+        <!-- =================ここまでdialogflow========================================================= -->
 
         <script type="text/javascript">
         var opts = {

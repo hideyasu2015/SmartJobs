@@ -106,11 +106,11 @@ $strings['BTN_FIND_YOUR_JOB'] = 'Find your job';
 
 $strings['HEADING_SEARCH_JOBS'] = 'お仕事一覧';
 
-$strings['LEADING_FIND_JOBS_BY_KEYWORD_OR_LOCATION'] = 'Find jobs by keyword or location';
+$strings['LEADING_FIND_JOBS_BY_KEYWORD_OR_LOCATION'] = '希望の職種と場所をいれてもらえへんか？';
 
 $strings['TEXT_SEARCH_ON'] = 'まずは、チャットでご相談してくれへんか？チャットの結果を表示しまんねん';
 
-$strings['TEXT_NO_RESULT'] = '<p class="no-jobs">No job listings match your search %s on %s</p>';
+$strings['TEXT_NO_RESULT'] = '<p class="no-jobs">探している仕事はありまへん。すんまへん<(_ _)> %s on %s</p>';
 
 $strings['PUBLISHED_ON'] = 'Published on';
 
@@ -122,19 +122,19 @@ $strings['DESCRIPTION_CATEGORIES'] = 'Search multiple job sites at once. One sea
 
 
 
-$strings['HEADING_LOCATIONS'] = 'Locations';
+$strings['HEADING_LOCATIONS'] = '場所';
 
 $strings['DESCRIPTION_LOCATIONS'] = 'Remember to "think local" when you want to find a job in a specific location. Your job search should focus on local job search resources';
 
 
 
-$strings['SEARCHRESULT_JOBS_FOR_TODAY_JOB'] = '%s Jobs for today';
+$strings['SEARCHRESULT_JOBS_FOR_TODAY_JOB'] = '%s 今日のお仕事';
 
-$strings['SEARCHRESULT_JOBS_FOR_TODAY_LOC'] = 'Jobs for today in %s';
+$strings['SEARCHRESULT_JOBS_FOR_TODAY_LOC'] = '%s　の中での今日のお仕事な';
 
-$strings['SEARCHRESULT_JOBS_FOR_TODAY_ALL'] = '%s Jobs for today in %s';
+$strings['SEARCHRESULT_JOBS_FOR_TODAY_ALL'] = '%s　の中での今日のお仕事な';
 
-$strings['SEARCHRESULT_DESCRIPTION'] = 'View Latest posted %s job listings on job banks, job search engine sites and job directories.';
+$strings['SEARCHRESULT_DESCRIPTION'] = '%s の検索結果やで。がんばって応募してんとあかんねん';
 
 
 
@@ -184,4 +184,4 @@ $strings['POWERED_BY'] = 'Powered By';
 
 
 
-$strings['JOB_RESULTS'] = 'jobresults';
+$strings['JOB_RESULTS'] = 'お仕事検索結果です。';
