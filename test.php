@@ -3,9 +3,10 @@ require 'vendor/autoload.php';
 
 use Google\Cloud\Dialogflow\V2\EntityTypesClient;
 
+putenv('GOOGLE_APPLICATION_CREDENTIALS=/home/takawano120/.config/gcloud/application_default_credentials.json');
 $entityTypesClient = new EntityTypesClient();
 $projectId = 'smartjobs-ykyi';
-$entityTypeId = 'job-type';
+$entityTypeId = '0abaf0b3-9e48-4e23-a3ff-d33040e2a024';
 $formattedEntityTypeName = $entityTypesClient->entityTypeName($projectId, $entityTypeId);
 
 $entityType = $entityTypesClient->getEntityType($formattedEntityTypeName);

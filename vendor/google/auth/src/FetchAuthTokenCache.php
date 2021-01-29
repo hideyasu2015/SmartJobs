@@ -131,7 +131,7 @@ class FetchAuthTokenCache implements
         if (!$this->fetcher instanceof SignBlobInterface) {
             throw new \RuntimeException(
                 'Credentials fetcher does not implement ' .
-                'Google\Auth\SignBlobInterface'
+                    'Google\Auth\SignBlobInterface'
             );
         }
 
@@ -164,7 +164,7 @@ class FetchAuthTokenCache implements
         if (!$this->fetcher instanceof ProjectIdProviderInterface) {
             throw new \RuntimeException(
                 'Credentials fetcher does not implement ' .
-                'Google\Auth\ProvidesProjectIdInterface'
+                    'Google\Auth\ProvidesProjectIdInterface'
             );
         }
 
@@ -189,7 +189,7 @@ class FetchAuthTokenCache implements
         if (!$this->fetcher instanceof UpdateMetadataInterface) {
             throw new \RuntimeException(
                 'Credentials fetcher does not implement ' .
-                'Google\Auth\UpdateMetadataInterface'
+                    'Google\Auth\UpdateMetadataInterface'
             );
         }
 
@@ -250,8 +250,10 @@ class FetchAuthTokenCache implements
 
     private function saveAuthTokenInCache($authToken, $authUri = null)
     {
-        if (isset($authToken['access_token']) ||
-            isset($authToken['id_token'])) {
+        if (
+            isset($authToken['access_token']) ||
+            isset($authToken['id_token'])
+        ) {
             // if $authUri is set, use it as the cache key
             $cacheKey = $authUri
                 ? $this->getFullCacheKey($authUri)

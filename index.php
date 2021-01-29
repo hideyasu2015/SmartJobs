@@ -32,10 +32,10 @@ if ($default_country == 'on') {
   <script type="text/javascript" src="https://gdc.indeed.com/ads/apiresults.js"></script>
   <!-- Favorite and ios icons -->
   <link rel="shortcut icon" href="<?php echo $siteurl; ?>/assets/img/ico/favicon.ico">
-  <link rel="apple-touch-icon" href="<?php echo $siteurl; ?>/assets/img/ico/icon.png" />
-  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $siteurl; ?>/assets/img/ico/icon-72.png" />
-  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $siteurl; ?>/assets/img/ico/icon2x.png" />
-  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $siteurl; ?>/assets/img/ico/icon-722x.png" />
+  <link rel="apple-touch-icon" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
+  <link rel="apple-touch-icon" sizes="72x72" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
+  <link rel="apple-touch-icon" sizes="144x144" href="<?php echo $siteurl; ?>/assets/img/ico/icon-36.png" />
   <script>
   (function(i, s, o, g, r, a, m) {
     i['GoogleAnalyticsObject'] = r;
@@ -96,8 +96,7 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide1_title; ?></h1>
               <p><?php echo $slide1_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
-                  data-slide-to="2"><?php echo _text('BTN_JOB_AGGREGATOR'); ?></a></p>
+              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="2">詳細はこちら</a></p>
             </div>
           </div>
         </div>
@@ -108,8 +107,7 @@ if ($default_country == 'on') {
             <div class="carousel-caption">
               <h1><?php echo $slide2_title; ?></h1>
               <p><?php echo $slide2_description; ?></p>
-              <p><a class="btn btn-large btn-primary" data-target="#myCarousel"
-                  data-slide-to="3"><?php echo _text('BTN_JOB_AGGREGATOR'); ?></a></p>
+              <p><a class="btn btn-large btn-primary" data-target="#myCarousel" data-slide-to="3">詳細はこちら</a></p>
             </div>
           </div>
         </div>
@@ -121,7 +119,7 @@ if ($default_country == 'on') {
               <h1><?php echo $slide3_title; ?></h1>
               <p><?php echo $slide3_description; ?></p>
               <p><a class="btn btn-large btn-primary newsearch"
-                  href="<?php echo get_site_url(array(), 'search'); ?>"><?php echo _text('BTN_FIND_YOUR_JOB'); ?></a>
+                  href="<?php echo get_site_url(array(), 'search'); ?>">自分の仕事をみつけよう!</a>
               </p>
             </div>
           </div>
@@ -258,19 +256,30 @@ if ($default_country == 'on') {
         </div>
 
         <!-- SIDEBAR Dialogflowです kawanoさん -->
+        <style>
+        df-messenger {
+          --df-messenger-bot-message: #878fac;
+          --df-messenger-button-titlebar-color: #42a5f5;
+          --df-messenger-chat-background-color: #fafafa;
+          --df-messenger-font-color: white;
+          --df-messenger-send-icon: #878fac;
+          --df-messenger-user-message: #479b3d;
+          --df-messenger-chat-icon: "https://takawano120.xsrv.jp/assets/img/ico/icon-36.png"
+        }
+        </style>
         <div class="col-md-4 float-right" id="sidebar">
           <div class="container">
             <div class="row">
               <div class="col-lg-12">
-                <iframe id="elem" height="430" width="420"
-                  src="https://console.dialogflow.com/api-client/demo/embedded/69f151eb-87b1-4597-9144-2de251db6976"></iframe>
+                <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+                <df-messenger intent="WELCOME" chat-title="SmartJobs" agent-id="69f151eb-87b1-4597-9144-2de251db6976"
+                  expand="true" language-code="ja"></df-messenger>
 
               </div>
             </div>
           </div>
         </div>
-
-        <!-- / SIDEBAR -->
+        <!-- / SIDEBAR ここまで-->
 
         <script type="text/javascript">
         var opts = {
@@ -521,63 +530,49 @@ if ($default_country == 'on') {
 
 
   <!-- BROWSE -->
-  <section id="browse">
+  <!-- <section id="browse">
     <div class="row">
       <div class="col-lg-12 text-center">
 
-        <h2><i class="fas fa-book-open"></i> <?php echo _text('BTN_BROWSE_JOBS'); ?></h2>
-        <p class="text-center lead"><?php echo _text('TEXT_SEARCH_ON'); ?></p>
+        <h2><i class="fas fa-book-open"></i>お仕事一覧　まずはチャットでご相談</h2>
+        <p class="text-center lead"><?#php echo _text('TEXT_SEARCH_ON'); ?></p>
 
 
         <div class="col-lg-12">
           <ul class="nav nav-pills nav-fill navtop" role="tablist">
             <li class="nav-item">
               <a class="nav-link active" href="#categories"
-                data-toggle="tab"><?php echo _text('HEADING_CATEGORIES'); ?></a>
+                data-toggle="tab"><?#php echo _text('HEADING_CATEGORIES'); ?></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#locations" data-toggle="tab"><?php echo _text('HEADING_LOCATIONS'); ?></a>
+              <a class="nav-link" href="#locations" data-toggle="tab"><?#php echo _text('HEADING_LOCATIONS'); ?></a>
             </li>
           </ul>
           <div class="tab-content">
             <div class="tab-pane active" role="tabpanel" id="categories">
 
               <!-- CATEGORIES -->
-              <div class="row multi-columns-row"><?php print_categories($categories); ?></div>
-              <!-- / CATEGORIES -->
-
+  <!-- <div class="row multi-columns-row"><?#php print_categories($categories); ?></div> -->
+  <!-- / CATEGORIES -->
+  <!-- 
             </div>
             <div class="tab-pane" role="tabpanel" id="locations">
 
               <!-- LOCATIONS -->
-              <div class="row multi-columns-row"><?php print_locations($locations); ?></div>
-              <!-- / LOCATIONS -->
-
+  <!-- <div class="row multi-columns-row"><?#php print_locations($locations); ?></div> -->
+  <!-- / LOCATIONS -->
+  <!-- 
             </div>
           </div>
         </div>
 
       </div>
     </div>
-  </section>
+  </section>  -->
   <!-- / BROWSE -->
 
 
-  <?php if (isset($downloadlink) && $downloadlink == 'on') : ?>
-  <section id="download">
 
-    <div class="jumbotron">
-      <h5 class="display-4">Smart Jobs</h5>
-      <p class="lead">Jobs Aggregator software can be used for creating different kind of job portals.</p>
-      <hr class="my-4">
-      <a class="btn btn-primary btn-lg" href="#" target="_blank" role="button">Learn more</a>
-    </div>
-
-  </section>
-  <?php endif; ?>
-
-
-  <?php include("inc/footer.php"); ?>
 
 
 
